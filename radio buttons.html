@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Radio Buttons</title>
+</head>
+<body>
+<script type="text/javascript">
+  function clicked(){
+    var rd1= document.getElementById("rd1");
+    var rd2=document.getElementById("rd2");
+
+    if(rd1.checked==true){
+        alert(rd1.value+"Clicked");
+    }
+    else if(rd2.checked==true){
+        alert(rd2.value+"Clicked");
+    }
+    else{
+        alert("No selection made")
+      }
+  }
+
+
+</script>
+
+<input id="rd1" type="radio" name="color" value="blue">Blue
+<br>
+<input id="rd2" type="radio" name="color" value="yellow">Yellow
+<br>
+
+<button onclick="clicked()">Click Me</button>
+</body>
+</html>
